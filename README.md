@@ -9,14 +9,14 @@ A fun quiz built with a third party trivia api.
 - AOS
 - Sketch
 
-# Mockup using Sketch
+## Mockup using Sketch
 
-# Initial Landing Page, Question Page
+## Initial Landing Page, Question Page
 
-# Logic
+## Logic
 
-# Local Storage 
+## Local Storage 
 
-# Key Learnings
+## Key Learnings
 
-# Future Features
+## Future Features
