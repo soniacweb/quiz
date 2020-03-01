@@ -1,11 +1,15 @@
 :root {
-  background-color: rgb(168, 168, 168);
+  /* background-color: rgb(168, 168, 168); */
+  background-image: url('https://i.imgur.com/aFdBicc.jpg');
+  background-image: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-size: 62.5%;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Baloo';
+  font-family: 'PT Mono';
   margin: 0;
   padding: 0;
 }
@@ -17,7 +21,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 5.4rem;
   margin-bottom: 5rem;
-  font-family: 'Monoton';
+  font-family: 'Bowlby One SC';
   color: white;
   font-weight: 500;
 }
@@ -42,10 +46,11 @@ h3 {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   max-width: 80rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 /* any child of my container */
@@ -61,7 +66,7 @@ h3 {
 
 .flex-center {
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .justify-center {
@@ -86,8 +91,10 @@ h3 {
   border: 0.1rem solid white;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: rgb(168, 168, 168);
+  color: black;
   background-color: white;
+  opacity: 30%;
+
 }
 
 .btn:hover {

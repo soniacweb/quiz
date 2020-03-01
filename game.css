@@ -1,10 +1,22 @@
+:root {
+  /* background-color: rgb(168, 168, 168); */
+  background-image: url('https://i.imgur.com/mBGEzr6.jpg');
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 62.5%;
+}
+
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.8rem;
-  border: 0.1rem solid white;
-  background-color: rgb(129, 125, 125);
+  border: 0.1rem solid black;
+  background-color: white;
+  opacity: 60%;
+
 }
 
 .choice-container:hover {
@@ -16,16 +28,37 @@
 
 .choice-prefix {
   padding: 1.5rem 2.5rem;
-  background-color: white;
-  color: grey;
+  background-color: black;
+  color: white;
 }
 
 .choice-text {
   padding: 1.5rem;
-  color: white;
+  color: black;
+  width: 100%;
+
 }
 
 #question {
-  font-family: 'Monoton';
-  color: white;
+  font-family: 'Bowlby One SC';
+  color: black;
+  background-color: white;
+  opacity: 60%;
+  text-align: center;
+}
+
+.container {
+  width: 100vh;
+  height: 100vh;
+  padding: 2rem;
+  /* opacity: 60%; */
+  margin: 0 auto;
+}
+
+.correct {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
 }

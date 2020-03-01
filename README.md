@@ -3,9 +3,9 @@
 A fun quiz built using the Open Trivia DB API.
 
 # Technologies:
-- JavaScript
+- JavaScript/ ES6
 - HTML
-- CSS 
+- CSS/FLEXBOX
 - AOS
 - Sketch
 
