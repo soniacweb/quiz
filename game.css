@@ -78,3 +78,17 @@
  .hud-main-text {
    text-align: center;
  }
+
+ #progressBar {
+   width: 20rem;
+   height: 4rem;
+   border: 0.3rem solid white;
+   opacity: 40%;
+   margin: 2rem 0;
+ }
+
+ #progressBarFull {
+  height: 3.4rem;
+  background-color: white; 
+  width: 0%;
+ }

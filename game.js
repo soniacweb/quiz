@@ -1,7 +1,8 @@
 
 const question = document.getElementById('question')
-const questionCounterText = document.getElementById('questionCounter')
+const progressText = document.getElementById('progressText')
 const scoreText = document.getElementById('score')
+const progressBarFull = document.getElementById('progressBarFull')
 
 const choices = Array.from(document.getElementsByClassName('choice-text'))
 // console.log(choices)
@@ -63,11 +64,14 @@ startGame = () => {
 getNewQuestion = () =>{
 
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    localStorage.setItem('mostRecentScore', score)
     //go to the end page
     return window.location.assign('/end.html')
   }
   questionCounter++
-  questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`
+  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`
+  //everytime we increment our question, we want to update the progress bar
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex]
@@ -94,8 +98,14 @@ choices.forEach(choice => {
     const selectedAnswer = selectedChoice.dataset['number']
     // console.log(selectedAnswer)
 
-    const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-    console.log(classToApply)
+    const classToApply = 
+     selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+    if(classToApply === 'correct') {
+      incrementScore(CORRECT_BONUS)
+    }
+
+    // console.log(classToApply)
 
     selectedChoice.parentElement.classList.add(classToApply)
     
@@ -103,14 +113,12 @@ choices.forEach(choice => {
       selectedChoice.parentElement.classList.remove(classToApply)
       getNewQuestion()
     }, 1000)
-
-
-
   })
 })
 
 incrementScore = num => {
-
+  score +=num
+  scoreText.innerText = score
 }
 
 startGame()
