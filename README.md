@@ -1,6 +1,12 @@
-# Quiz
+<p align= center>
+<img src="https://i.imgur.com/aFdBicc.jpg" width=400px>
+<p>
 
-A fun quiz built using the Open Trivia DB API.
+# How Now Are You?
+
+A fun app built using the Open Trivia DB API, where the user can answer questions on a variety of very 'current' topics.
+
+Link can be found <a href="https://soniacweb.github.io/quiz/.">here </a>
 
 # Technologies:
 - JavaScript/ ES6
