@@ -8,6 +8,7 @@ A fun quiz built using the Open Trivia DB API.
 - CSS/FLEXBOX
 - AOS
 - Sketch
+- Open Trivia DB API
 
 # Objectives:
 
