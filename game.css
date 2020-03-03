@@ -52,7 +52,9 @@
   height: 100vh;
   padding: 2rem;
   /* opacity: 60%; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
+    margin-top: 20rem;
+
 }
 
 /* optional */

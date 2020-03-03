@@ -75,17 +75,17 @@ getNewQuestion = () =>{
     return window.location.assign('/end.html')
   }
   questionCounter++
-  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`
+  progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`
   //everytime we increment our question, we want to update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex]
-  question.innerText = currentQuestion.question
+  question.innerHTML = currentQuestion.question
   
   choices.forEach(choice => {
     const number = choice.dataset['number']
-    choice.innerText = currentQuestion['choice' + number]
+    choice.innerHTML = currentQuestion['choice' + number]
   })
 
   availableQuestions.splice(questionIndex, 1)

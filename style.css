@@ -40,6 +40,11 @@ h3 {
   font-weight: 500;
 }
 
+#enter {
+  font-size: 4.2rem; 
+  font-weight: 500;
+  color: white;
+}
 /* utilities */
 
 .container {
@@ -48,9 +53,10 @@ h3 {
   display: flex;
   justify-content: right;
   align-items: right;
-  max-width: 80rem;
+  max-width: 110rem;
   margin: 0 auto;
-  padding: 2rem;
+  /* margin-top: 5rem; */
+  padding: 4rem;
 }
 
 /* any child of my container */
@@ -65,7 +71,7 @@ h3 {
 }
 
 .flex-center {
-  justify-content: center;
+ justify-content: center;
   /* align-items: left; */
 }
 
@@ -84,9 +90,9 @@ h3 {
 /* buttons  */
 
 .btn {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1rem 0;
-  width: 20rem;
+  width: 23rem;
   text-align: center;
   border: 0.1rem solid white;
   margin-bottom: 1rem;
@@ -99,7 +105,8 @@ h3 {
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgb(221, 220, 220);
+  opacity: 90%;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(246, 245, 245);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -110,6 +117,27 @@ h3 {
   transform: none;
 }
 
+.btn-highscore {
+  font-size: 2rem;
+  padding: 1rem 0;
+  width: 15rem;
+  text-align: center;
+  border: 0.1rem solid white;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  opacity: 30%;
+}
+
+.btn-highscore:hover {
+  cursor: pointer;
+  opacity: 90%;
+  box-shadow: 0 0.4rem 1.4rem 0 #e6fafd;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
 /* end  */
 
 form {

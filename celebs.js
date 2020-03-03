@@ -43,7 +43,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=26&difficulty=easy&type=mu
       loadedQuestion.correct_answer
     )
     answerChoices.forEach((choice, index) => {
-      formattedQuestion["choice" + (index + 1)] = choice
+      formattedQuestion['choice' + (index + 1)] = choice
     })
     return formattedQuestion
   })
@@ -75,17 +75,17 @@ getNewQuestion = () =>{
     return window.location.assign('/end.html')
   }
   questionCounter++
-  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`
+  progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`
   //everytime we increment our question, we want to update the progress bar
   progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
 
   const questionIndex = Math.floor(Math.random() * availableQuestions.length)
   currentQuestion = availableQuestions[questionIndex]
-  question.innerText = currentQuestion.question
+  question.innerHTML = currentQuestion.question
   
   choices.forEach(choice => {
     const number = choice.dataset['number']
-    choice.innerText = currentQuestion['choice' + number]
+    choice.innerHTML = currentQuestion['choice' + number]
   })
 
   availableQuestions.splice(questionIndex, 1)
@@ -97,7 +97,7 @@ getNewQuestion = () =>{
 choices.forEach(choice => {
   choice.addEventListener('click', e => {
     // console.log(e.target)
-    if (!acceptingAnswers) return;
+    if (!acceptingAnswers) return
 
     acceptingAnswers = false
     const selectedChoice = e.target
@@ -107,7 +107,7 @@ choices.forEach(choice => {
     const classToApply = 
      selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-    if(classToApply === 'correct') {
+    if (classToApply === 'correct') {
       incrementScore(CORRECT_BONUS)
     }
 
@@ -123,7 +123,7 @@ choices.forEach(choice => {
 })
 
 incrementScore = num => {
-  score +=num
+  score += num
   scoreText.innerText = score
 }
 
