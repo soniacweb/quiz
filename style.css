@@ -66,7 +66,7 @@ h3 {
 
 .flex-center {
   justify-content: center;
-  align-items: left;
+  /* align-items: left; */
 }
 
 .justify-center {

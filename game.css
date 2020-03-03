@@ -80,6 +80,7 @@
  #hud {
    display:flex;
    justify-content: space-between;
+   color: white;
  }
 
  .hud-prefix {
