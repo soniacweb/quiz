@@ -5,7 +5,7 @@ const finalScore = document.getElementById('finalScore')
 
 //json stringify converts array into a string for localstorage
 //, JSON.stringify([])
-const highScores = JSON.parse(localStorage.getItem('highSores')) || []
+const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 console.log(highScores)
 
