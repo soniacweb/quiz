@@ -25,8 +25,9 @@ let availableQuestions = []
 //basically going to be a copy of our full question set from the api 
 let questions = []
 
-fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple').then(res => {
+fetch('https://opentdb.com/api.php?amount=10&category=10&difficulty=easy&type=multiple').then(res => {
   console.log(res)
+  
   return res.json()
 }).then(loadedQuestions => {
   console.log(loadedQuestions.results)

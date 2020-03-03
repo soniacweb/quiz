@@ -25,7 +25,7 @@ let availableQuestions = []
 //basically going to be a copy of our full question set from the api 
 let questions = []
 
-fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple').then(res => {
+fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple').then(res => {
   console.log(res)
   return res.json()
 }).then(loadedQuestions => {
@@ -43,7 +43,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=mul
       loadedQuestion.correct_answer
     )
     answerChoices.forEach((choice, index) => {
-      formattedQuestion['choice' + (index + 1)] = choice
+      formattedQuestion["choice" + (index + 1)] = choice
     })
     return formattedQuestion
   })
@@ -97,7 +97,7 @@ getNewQuestion = () =>{
 choices.forEach(choice => {
   choice.addEventListener('click', e => {
     // console.log(e.target)
-    if (!acceptingAnswers) return
+    if (!acceptingAnswers) return;
 
     acceptingAnswers = false
     const selectedChoice = e.target
@@ -107,7 +107,7 @@ choices.forEach(choice => {
     const classToApply = 
      selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-    if (classToApply === 'correct') {
+    if(classToApply === 'correct') {
       incrementScore(CORRECT_BONUS)
     }
 
@@ -123,7 +123,7 @@ choices.forEach(choice => {
 })
 
 incrementScore = num => {
-  score += num
+  score +=num
   scoreText.innerText = score
 }
 
