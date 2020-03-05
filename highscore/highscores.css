@@ -1,5 +1,5 @@
 :root {
-  /* background-color: rgb(168, 168, 168); */
+  background-color: black;
   background-image: url('https://i.imgur.com/eHJERzf.jpg');
   background-image: cover;
   background-repeat: no-repeat;
@@ -43,6 +43,7 @@ h1 {
   color: white;
   font-size: 3rem;
   margin-bottom: 4rem;
+
 }
 
 .high-score {
@@ -96,7 +97,7 @@ transition: 0.5s;
 
 .btn {
   font-size: 2rem;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   width: 23rem;
   text-align: center;
   border: 0.1rem solid white;
@@ -104,7 +105,7 @@ transition: 0.5s;
   text-decoration: none;
   color: black;
   background-color: white;
-  opacity: 30%;
+  opacity: 60%;
 
 }
 

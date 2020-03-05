@@ -9,17 +9,23 @@
   <!-- <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="game.css"> -->
   <link rel="stylesheet" href="../levels.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Tech Levels</title>
 </head>
 <body>
 
 
- <div class="title"> 
+ <div class="title">
+  <div data-aos="fade-down"> 
     <h1> Tech </h1>
+    </div>
+    <div data-aos="fade-down"> 
     <h3>Choose Your Level</h3>
   </div>
+ </div>
 
+ <div data-aos="fade-up"> 
   <div class="options"> 
           <a class="flex-items" href="./tv.html">Easy</a>
       
@@ -27,11 +33,28 @@
           
            <a class="flex-items" href="./tvHard.html">Hard</a>
   </div>
+ </div>
 
+ <div data-aos="fade-up"> 
   <div class="containter"> 
-  <div class="btn">
-            <a class="btn" href="../index.html">Return To Home</a>
+    <div class="btn">
+      <a class="btn" href="../index.html">Return To Home</a>
+        </div>
           </div>
-          </div>
+            </div>
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+          <script>
+          AOS.init({
+            duration: 1200,  
+          })
+      
+          AOS.init();
+      
+        </script>
+
 </body>
 </html>

@@ -5,22 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|PT+Mono&display=swap" rel="stylesheet">
   <title>High Scores Hall of Fame</title>
- 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
   <link rel="stylesheet" href="./highscores.css">
   <!-- <link rel="stylesheet" href="../style.css"> -->
  <!-- <link rel="stylesheet" href="../generalknowledge/game.css"> -->
 
 </head>
 <body>
+
+ 
   <div class="container">
     <div id="highScores" class="flex-center flex-column">
+      <div data-aos="fade-down"> 
       <h1 id="finalScore">High Scores</h1>
+      </div>
+      <div data-aos="fade-up">
       <ul id="highScoresList"></ul>
+      </div>
+      <div data-aos="fade-up"> 
       <a href="../index.html" class="btn">Go Home</a>
-    
+    </div>
       </div>
     </div>   
   
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+    <script>
+    AOS.init({
+      duration: 1200,  
+    })
+
+    AOS.init();
+
+  </script>
 <script src="./highscores.js"></script>
 </body>
 </html>
