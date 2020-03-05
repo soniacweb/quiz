@@ -25,7 +25,7 @@ let availableQuestions = []
 //basically going to be a copy of our full question set from the api 
 let questions = []
 
-fetch('https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple').then(res => {
+fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple').then(res => {
   console.log(res)
   return res.json()
 }).then(loadedQuestions => {
@@ -72,7 +72,7 @@ getNewQuestion = () =>{
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem('mostRecentScore', score)
     //go to the end page
-    return window.location.assign('./end.html')
+    return window.location.assign('../end.html')
   }
   questionCounter++
   progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`

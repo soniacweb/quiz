@@ -51,6 +51,8 @@ Link can be found <a href="https://soniacweb.github.io/quiz/.">here </a>
 
 ## Local Storage 
 
-## Key Learnings
+## Key Learnings and Wins
+
+- Adding levels, and adding progress bar
 
 ## Future Features
